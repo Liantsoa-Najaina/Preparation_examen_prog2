@@ -1,11 +1,12 @@
 package com.ferry;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Conducteur extends Personne {
     private String numeroPermis;
 
-    public Conducteur(String nom, double poids, String adresse, Date dateDeNaissance, String prenom, String numeroPermis) {
+    public Conducteur(String nom, double poids, String adresse, LocalDate dateDeNaissance, String prenom, String numeroPermis) {
         super(nom, poids, adresse, dateDeNaissance, prenom);
         this.numeroPermis = numeroPermis;
     }

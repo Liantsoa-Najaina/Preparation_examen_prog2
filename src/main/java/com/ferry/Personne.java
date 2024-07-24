@@ -1,15 +1,16 @@
 package com.ferry;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Personne {
     private String nom;
     private String prenom ;
-    private final Date dateDeNaissance;
+    private final LocalDate dateDeNaissance;
     private String adresse;
     private double poids;
 
-    public Personne(String nom, double poids, String adresse, Date dateDeNaissance, String prenom) {
+    public Personne(String nom, double poids, String adresse, LocalDate dateDeNaissance, String prenom) {
         this.nom = nom;
         this.poids = poids;
         this.adresse = adresse;
@@ -41,7 +42,7 @@ public class Personne {
         this.adresse = adresse;
     }
 
-    public Date getDateDeNaissance() {
+    public LocalDate getDateDeNaissance() {
         return dateDeNaissance;
     }
 
